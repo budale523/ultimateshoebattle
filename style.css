@@ -9,9 +9,7 @@ body {
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #e9e9e9;
-    font-family: 'Inter';
-font-style: normal;
+    background-color: #e9e9e9;  
   }
   
   /* Style the links inside the navigation bar */
@@ -287,14 +285,14 @@ color: #000000;
 
 .slidecontainer {
     width: 100%;
-    opacity: 1;
+    opacity: 50;
   }
   
   .slider {
     -webkit-appearance: none;
     width: 175px;
     height: 20px;
-    background: #d3d3d3;
+    background: #E4D6C2;
     outline: none;
     opacity: 0.9;
     -webkit-transition: .2s;
