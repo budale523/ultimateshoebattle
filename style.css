@@ -4,7 +4,11 @@ body {
 
 
 .logo {
-    margin: 0px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 573px;
+    height: 138px;
 }
 
 .brands {
