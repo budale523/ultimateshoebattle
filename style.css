@@ -10,6 +10,12 @@ body {
   margin-left: 25px;
 }
 
+.vl {
+  margin-left: 350px;
+  border-left: 6px solid black;
+  height: 900px;
+}
+
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
@@ -292,10 +298,10 @@ color: #000000;
   
   header h2{
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 34px;
-line-height: 41px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
 
 color: #000000;
   }
@@ -337,7 +343,7 @@ color: #000000;
     justify-content: center;
   }
   .slider{
-    height: 5px;
+    height: 4px;
     position: relative;
     background: #ddd;
     border-radius: 5px;
