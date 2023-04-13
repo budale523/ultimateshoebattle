@@ -10,6 +10,7 @@ body {
   margin-left: 25px;
 }
 
+
 .vl {
   margin-left: 350px;
   border-left: 6px solid black;
@@ -387,4 +388,6 @@ color: #000000;
     pointer-events: auto;
     -moz-appearance: none;
     box-shadow: 0 0 6px rgba(0,0,0,0.05);
-  }
+  } 
+
+  
