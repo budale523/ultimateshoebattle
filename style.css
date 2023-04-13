@@ -325,6 +325,33 @@ color: #000000;
   background: #8B7F52;
   cursor: pointer;
 }
+h1 {
+  font-family: 'Inter';
+  margin-top: 100px;
+  margin-left: 210px;
+}
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
 
+.col-4 img {
+  width: 100%;
+  
+}
 
   
