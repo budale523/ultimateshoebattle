@@ -74,8 +74,19 @@
               <div id="demoAcc1" class="w3-hide w3-white w3-card">
                 <a href="#" class="w3-bar-item w3-button">Women</a>
                 <a href="#" class="w3-bar-item w3-button">Men</a>
-
             </div>
+
+            <div class="margin"></div>
+            <div class="marginleft">Price range</div>
+            <div class="margint"></div>
+            <div class="marginleft">Drag the slider to display the current value.</div>
+            <div class="margint"></div>
+
+            <div class="slidecontainer">
+                <input type="range" min="1" max="10000" value="1000" class="slider" id="myRange">
+                <div class="marginleft">Value: <span id="demo"></span></div>
+</div>
+            
       </div>
       
     
@@ -121,6 +132,16 @@ function myAccFunc1() {
           x.previousElementSibling.className.replace(" w3-brown", "");
         }
       }
+</script>
+
+      <script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
 
       </script>
       
