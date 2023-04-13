@@ -51,6 +51,7 @@
             <a href="#" class="w3-bar-item w3-button">Birkenstock</a>
             <a href="#" class="w3-bar-item w3-button">Crocs</a>
           </div>
+
           <div class="margin"></div>
           <div class="w3-dropdown-click">
             <button class="w3-button" onclick="myDropFunc()">
@@ -64,6 +65,17 @@
               <a href="#" class="w3-bar-item w3-button">11</a>
               <a href="#" class="w3-bar-item w3-button">12</a>
               <a href="#" class="w3-bar-item w3-button">13+</a>
+            </div>
+            
+            <div class="margin"></div>
+          <div class="w3-dropdown-click">
+            <button class="w3-button" onclick="myDropFunc1()">
+              Gender <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="demoDrop1" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+              <a href="#" class="w3-bar-item w3-button">Men</a>
+              <a href="#" class="w3-bar-item w3-button">Women</a>
+
             </div>
       </div>
       
@@ -86,17 +98,28 @@
       }
 
       function myDropFunc() {
-  var x = document.getElementById("demoDrop");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-green";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-green", "");
+        var x = document.getElementById("demoDrop");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+           x.previousElementSibling.className += " w3-brown";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className = 
+          x.previousElementSibling.className.replace(" w3-brown", "");
   }
 }
       
+function myDropFunc1() {
+  var x = document.getElementById("demoDrop1");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-brown";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-brown", "");
+  }
+}
       </script>
       
   </body>
