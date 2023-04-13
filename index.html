@@ -54,10 +54,10 @@
 
           <div class="margin"></div>
           <div class="w3-dropdown-click">
-            <button class="w3-button" onclick="myDropFunc()">
+            <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
               Sizes <i class="fa fa-caret-down"></i>
             </button>
-            <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+            <div id="demoAcc2" class="w3-hide w3-white w3-card">
               <a href="#" class="w3-bar-item w3-button">7</a>
               <a href="#" class="w3-bar-item w3-button">8</a>
               <a href="#" class="w3-bar-item w3-button">9</a>
@@ -81,8 +81,7 @@
     
 
 
-    <script src="main.js">
-    </script>
+    <script src="main.js"> </script>
     <script>
       function myAccFunc() {
         var x = document.getElementById("demoAcc");
@@ -95,19 +94,22 @@
           x.previousElementSibling.className.replace(" w3-brown", "");
         }
       }
+</script>
 
-      function myDropFunc() {
-        var x = document.getElementById("demoDrop");
+<script>
+      function myAccFunc2() {
+        var x = document.getElementById("demoAcc2");
         if (x.className.indexOf("w3-show") == -1) {
           x.className += " w3-show";
-           x.previousElementSibling.className += " w3-brown";
+          x.previousElementSibling.className += " w3-brown";
         } else { 
           x.className = x.className.replace(" w3-show", "");
           x.previousElementSibling.className = 
           x.previousElementSibling.className.replace(" w3-brown", "");
   }
 }
-
+  </script>
+ <script>
 function myAccFunc1() {
         var x = document.getElementById("demoAcc1");
         if (x.className.indexOf("w3-show") == -1) {
