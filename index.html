@@ -27,7 +27,7 @@
         <h3 class="w3-bar-item">Menu</h3>
         <div class="margin"></div>
         <div class="marginleft">
-        <div id="list1" class="dropdown-check-list" tabindex="100">
+        <div id="list" class="dropdown-check-list" tabindex="100">
           <span class="anchor">Select Brands</span>
           <ul class="items">
             <li><input type="checkbox" /> Nike </li>
@@ -53,17 +53,11 @@
           </ul>
           
           <div class="margin"></div>  
-        
-          <div id="list2" class="dropdown-check-list2" tabindex="100">
-            <span class="anchor">Select Size</span>
+          <div id="list" class="dropdown-check-list" tabindex="100">
+            <span class="anchor">Select Sizes</span>
             <ul class="items">
-              <li><input type="checkbox" /> 7 </li>
-              <li><input type="checkbox" /> 8</li>
-              <li><input type="checkbox" /> 9</li>
-              <li><input type="checkbox" /> 10</li>
-              <li><input type="checkbox" /> 11</li>
-              <li><input type="checkbox" /> 12</li>
-              <li><input type="checkbox" /> 13+</li>
+              <li><input type="checkbox" /> Nike </li>
+              <li><input type="checkbox" /> Adidas</li>
             </ul>
 
             <div class="margin"></div>
@@ -86,7 +80,7 @@
           </div>
         </div>
       </div>
-            
+
       </div>
       
     
@@ -94,24 +88,39 @@
 
     <script src="main.js"> </script>
     <script>
-      var checkList = document.getElementById('list1');
+      var checkList = document.getElementById('list');
       checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
         if (checkList.classList.contains('visible'))
           checkList.classList.remove('visible');
         else
           checkList.classList.add('visible');
 }
-</script>
+    </script> 
 
-<script>
-  var checkList2 = document.getElementById('list2');
-  checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
-    if (checkList.classList.contains('visible'))
-      checkList.classList.remove('visible');
-    else
-      checkList.classList.add('visible');
+    <script>
+      var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
 }
-</script>
+    </script>
       
+    <script>
+       var checkList = document.getElementById('list');
+      checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+        if (checkList.classList.contains('visible'))
+          checkList.classList.remove('visible');
+        else
+          checkList.classList.add('visible');
+      }
+    </script>
+
   </body>
 </html>
