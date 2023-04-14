@@ -26,66 +26,64 @@
       <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:12.5%">
         <h3 class="w3-bar-item">Menu</h3>
         <div class="margin"></div>
-        <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
-          Brands <i class="fa fa-caret-down"></i>
-          </button>
-          <div id="demoAcc" class="w3-hide w3-white w3-card">
-            <a href="#" class="w3-bar-item w3-button">Nike</a>
-            <a href="#" class="w3-bar-item w3-button">Adidas</a>
-            <a href="#" class="w3-bar-item w3-button">Puma</a>
-            <a href="#" class="w3-bar-item w3-button">Reebok</a>
-            <a href="#" class="w3-bar-item w3-button">New Balance</a>
-            <a href="#" class="w3-bar-item w3-button">Converse</a>
-            <a href="#" class="w3-bar-item w3-button">Vans</a>
-            <a href="#" class="w3-bar-item w3-button">Sketchers</a>
-            <a href="#" class="w3-bar-item w3-button">Asics</a>
-            <a href="#" class="w3-bar-item w3-button">Under Armour</a>
-            <a href="#" class="w3-bar-item w3-button">Brooks</a> 
-            <a href="#" class="w3-bar-item w3-button">Fila</a> 
-            <a href="#" class="w3-bar-item w3-button">Hoka One One</a>
-            <a href="#" class="w3-bar-item w3-button">Salomon</a>
-            <a href="#" class="w3-bar-item w3-button">Merrell</a>
-            <a href="#" class="w3-bar-item w3-button">Clarks</a>
-            <a href="#" class="w3-bar-item w3-button">Timberland</a>
-            <a href="#" class="w3-bar-item w3-button">Doc Martens</a>
-            <a href="#" class="w3-bar-item w3-button">Birkenstock</a>
-            <a href="#" class="w3-bar-item w3-button">Crocs</a>
+        <div class="marginleft">
+        <div id="list1" class="dropdown-check-list" tabindex="100">
+          <span class="anchor">Select Brands</span>
+          <ul class="items">
+            <li><input type="checkbox" /> Nike </li>
+            <li><input type="checkbox" /> Adidas</li>
+            <li><input type="checkbox" /> Puma </li>
+            <li><input type="checkbox" /> Reebok </li>
+            <li><input type="checkbox" /> New Balance </li>
+            <li><input type="checkbox" /> Converse </li>
+            <li><input type="checkbox" /> Vans</li>
+            <li><input type="checkbox" /> Sketchers</li>
+            <li><input type="checkbox" /> Asics</li>
+            <li><input type="checkbox" /> Under Armour</li>
+            <li><input type="checkbox" /> Brooks</li>
+            <li><input type="checkbox" /> Fila</li>
+            <li><input type="checkbox" /> Hoka One One</li>
+            <li><input type="checkbox" /> Salomon</li>
+            <li><input type="checkbox" /> Merrell</li>
+            <li><input type="checkbox" /> Clarks</li>
+            <li><input type="checkbox" /> Timberland</li>
+            <li><input type="checkbox" /> Doc Martens</li>
+            <li><input type="checkbox" /> Birkenstock</li>
+            <li><input type="checkbox" /> Crocs</li>
+          </ul>
+          
+          <div class="margin"></div>  
+        
+          <div id="list2" class="dropdown-check-list2" tabindex="100">
+            <span class="anchor">Select Size</span>
+            <ul class="items">
+              <li><input type="checkbox" /> 7 </li>
+              <li><input type="checkbox" /> 8</li>
+              <li><input type="checkbox" /> 9</li>
+              <li><input type="checkbox" /> 10</li>
+              <li><input type="checkbox" /> 11</li>
+              <li><input type="checkbox" /> 12</li>
+              <li><input type="checkbox" /> 13+</li>
+            </ul>
+
+            <div class="margin"></div>
+            <div class="marginleft">
+            <div class="gender"></div>
+            <h3>Gender</h3>
+        
+            <div class="Men">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+              Men
+            </div>
+        
+            <div class="Women">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+              Women
+            </div>
           </div>
-
-          <div class="margin"></div>
-          <div class="w3-dropdown-click">
-            <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
-              Sizes <i class="fa fa-caret-down"></i>
-            </button>
-            <div id="demoAcc2" class="w3-hide w3-white w3-card">
-              <a href="#" class="w3-bar-item w3-button">7</a>
-              <a href="#" class="w3-bar-item w3-button">8</a>
-              <a href="#" class="w3-bar-item w3-button">9</a>
-              <a href="#" class="w3-bar-item w3-button">10</a>
-              <a href="#" class="w3-bar-item w3-button">11</a>
-              <a href="#" class="w3-bar-item w3-button">12</a>
-              <a href="#" class="w3-bar-item w3-button">13+</a>
-            </div>
-
-            <div class="margin"></div>
-            <button class="w3-button w3-block w3-left-align" onclick="myAccFunc1()">
-              Gender <i class="fa fa-caret-down"></i>
-              </button>
-              <div id="demoAcc1" class="w3-hide w3-white w3-card">
-                <a href="#" class="w3-bar-item w3-button">Women</a>
-                <a href="#" class="w3-bar-item w3-button">Men</a>
-            </div>
-
-            <div class="margin"></div>
-            <div class="marginleft">Price range</div>
-            <div class="margint"></div>
-            <div class="marginleft">Drag the slider to display the current value.</div>
-            <div class="margint"></div>
-
-            <div class="slidecontainer">
-                <input type="range" min="1" max="10000" value="1000" class="slider" id="myRange">
-                <div class="marginleft">Value: <span id="demo"></span></div>
-</div>
+        </div>
             
       </div>
       
@@ -94,56 +92,24 @@
 
     <script src="main.js"> </script>
     <script>
-      function myAccFunc() {
-        var x = document.getElementById("demoAcc");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-          x.previousElementSibling.className += " w3-brown";
-        } else { 
-          x.className = x.className.replace(" w3-show", "");
-          x.previousElementSibling.className = 
-          x.previousElementSibling.className.replace(" w3-brown", "");
-        }
-      }
+      var checkList = document.getElementById('list1');
+      checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+        if (checkList.classList.contains('visible'))
+          checkList.classList.remove('visible');
+        else
+          checkList.classList.add('visible');
+}
 </script>
 
 <script>
-      function myAccFunc2() {
-        var x = document.getElementById("demoAcc2");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-          x.previousElementSibling.className += " w3-brown";
-        } else { 
-          x.className = x.className.replace(" w3-show", "");
-          x.previousElementSibling.className = 
-          x.previousElementSibling.className.replace(" w3-brown", "");
-  }
+  var checkList2 = document.getElementById('list2');
+  checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+    if (checkList.classList.contains('visible'))
+      checkList.classList.remove('visible');
+    else
+      checkList.classList.add('visible');
 }
-  </script>
- <script>
-function myAccFunc1() {
-        var x = document.getElementById("demoAcc1");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-          x.previousElementSibling.className += " w3-brown";
-        } else { 
-          x.className = x.className.replace(" w3-show", "");
-          x.previousElementSibling.className = 
-          x.previousElementSibling.className.replace(" w3-brown", "");
-        }
-      }
 </script>
-
-      <script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-
-      </script>
       
   </body>
 </html>
